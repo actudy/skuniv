@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script  src="//code.jquery.com/jquery-latest.min.js"></script>
+<script>
+	$(document).ready(function() {
+		/* $("div.ancestor").children().css({
+			"color":"red",
+			"border":"2px solid red"
+		}); */
+		
+		/* $("div.ancestor").children(".div1").css({
+			"color":"red",
+			"border":"2px solid red"
+		}); */
+		
+		$("div.ancestor").find("*").css({ //span만 찾는다!
+			"color":"red",
+			"border":"2px solid red"
+		});
+	});
+</script>
+<style>
+.ancestor * { /* 모든 하위에 적용 */
+	display: black;
+	border: 2px solid lightgray;
+	color: lightgray;
+	padding: 5px;
+	margin: 10px;
+}
+</style>
+</head>
+<body>
+	<div class="ancestor">ancestor
+		<div style="width: 500px;" class="div1">div
+			<ul>ul
+				<li>li
+					<span>span</span>
+				</li>
+			</ul>
+		</div>
+		
+		<div style="width: 500px;" class="div2">div
+			<p>p
+				<span>span</span>
+			</p>
+		</div>
+		
+	</div>
+</body>
+</html>

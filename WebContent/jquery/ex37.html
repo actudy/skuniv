@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script  src="//code.jquery.com/jquery-latest.min.js"></script>
+<script>
+	$(document).ready(function() {
+		/* $("h2").siblings().css({ //같은 목록에 있지 않으면 나오지 않는다!
+			"color":"red",
+			"border":"2px solid red"
+		}); */
+		/* $("h2").siblings("p").css({ //같은 목록에서 p를 찾는다!!
+			"color":"red",
+			"border":"2px solid red"
+		}); */
+		/* $("h2").next().css({ //오른쪽 방향에 같은 레벨인 것만 나온다.
+			"color":"red",
+			"border":"2px solid red"
+		}); */
+		/* $("h2").nextAll().css({ //오른쪽 방향에 같은 레벨인 것만 나온다.
+			"color":"red",
+			"border":"2px solid red"
+		}); */
+		$("h2").nextUntil("p").css({ //오른쪽 방향에 같은 레벨인 것만 나온다.
+			"color":"red",
+			"border":"2px solid red"
+		});
+	});
+</script>
+<style>
+.siblings * {
+	display: black;
+	border: 2px solid lightgray;
+	color: lightgray;
+	padding: 5px;
+	margin: 10px;
+}
+</style>
+</head>
+<body class="siblings">
+	<div>div
+		<p>p</p>
+		<span>span</span>
+		<h2>h2</h2>
+		<h3>h3</h3>
+		<p>p2</p>
+	</div>
+		<h1>h1</h1>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script  src="//code.jquery.com/jquery-latest.min.js"></script>
+<script>
+	$(document).ready(function() {
+		$(":button").click(function() {
+			//$("#div1").fadeToggle();
+			//$("#div2").fadeToggle(3000);
+			$("#div1").fadeTo('slow', 0.5); //투명도 0~1사이 0이면 안보임
+			$("#div2").fadeTo('fast', 0.2); //투명도 0~1사이 0이면 안보임
+			$("#div3").fadeTo('slow', 0); //투명도 0~1사이 0이면 안보임
+		});
+		
+	});
+</script>
+</head>
+<body>
+	<button>클릭해봐</button>
+	<br/><br/>
+	<div id="div1" style="width: 100px; height: 100px; background-color: red; "></div><br/>
+	<div id="div2" style="width: 100px; height: 100px; background-color: green; "></div><br/>
+	<div id="div3" style="width: 100px; height: 100px; background-color: blue; "></div><br/>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

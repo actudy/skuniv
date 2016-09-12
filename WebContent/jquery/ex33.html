@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script  src="//code.jquery.com/jquery-latest.min.js"></script>
+<script>
+	$(document).ready(function() {
+		$("button").click(function() {
+			//$("h1, h2, p").addClass("blue"); //class이름 추가! <h1 class="blue"> .을 붙이면 안된다!
+			//$("div").addClass("important blue"); //두가지의 class를 붙일때는 띄워쓰기하면된다.
+			//$("h1").removeClass("blue");
+			$("h1, h2, p").toggleClass("blue");
+			
+			alert($("h1").css("color"));
+			$("h1").css({
+				"background-color":"gray",
+				"font-size":"10px"
+			});
+		});
+	});
+</script>
+<style>
+.important {
+	font-weight: bold;
+	font-size: xx-large;
+}
+
+.blue {
+	color: blue;
+}
+</style>
+</head>
+<body>
+
+	<h1 class="blue">문장1</h1>
+	<h2 class="blue">문장2</h2>
+	
+	<p>나는 문단입니다.</p>
+	
+	<div>
+		나는 구역입니다.
+	</div><br/><br/>
+	<button>적용</button>
+</body>
+</html>

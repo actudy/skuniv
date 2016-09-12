@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script  src="//code.jquery.com/jquery-latest.min.js"></script>
+<script>
+	$(document).ready(function() {
+		var text = 'width : ' + $("#div").width() + "<br/>";
+			text += 'height : ' + $("#div").height() + "<br/>";
+			text += 'innerWidth : ' + $("#div").innerWidth() + "<br/>";
+			text += 'innerHeight : ' + $("#div").innerHeight() + "<br/>";
+			text += 'outerWidth : ' + $("#div").outerWidth() + "<br/>"; //border까지 합쳐서!
+			text += 'outerHeight : ' + $("#div").outerHeight() + "<br/>";
+			text += 'outerWidth : ' + $("#div").outerWidth(true) + "<br/>"; //margin까지 합쳐서!
+			text += 'outerHeight : ' + $("#div").outerHeight(true) + "<br/>";
+			text += 'window.width : ' + $(window).width() + "<br/>";
+			text += 'window.height : ' + $(window).height() + "<br/>";
+		$("#div").html(text);
+		
+		$("button").click(function() {
+			//400 X 400 변경
+			$("#div").width(400).height(400);
+		});
+	});
+</script>
+<style>
+#div{
+	height: 100px;
+	width: 300px;
+	padding: 10px;
+	margin: 3px;
+	border: 1px solid blue;
+	background-color: skyblue;
+	font-size: 10px;
+}
+</style>
+</head>
+<body>
+	<button>크기변경</button>
+	<div id="div"></div>
+</body>
+</html>

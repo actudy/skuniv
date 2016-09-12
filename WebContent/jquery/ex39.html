@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script  src="//code.jquery.com/jquery-latest.min.js"></script>
+<script>
+	$(document).ready(function() {
+		//$("p").eq(2).css("background-color","orange"); //0,1,2번째의 값이 바뀐다. => eq(2)
+		//$("p").filter(".select").css("background-color","orange"); //필터! select있는 것만 => filter()
+		$("p").not(".select").css("background-color","orange"); //필터! select있는 것만 => filter()
+	});
+</script>
+<style>
+</style>
+</head>
+<body>
+	<h1>중화반점 메뉴</h1>
+	<p>식사류</p>
+	<p class="select">자장면</p>
+	<p class="select">볶음밥</p>
+	<p>깐쇼새우</p>
+	<p>양장피</p>
+	<br />
+	<p>주문하세요</p>
+</body>
+</html>

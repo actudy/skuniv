@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script  src="//code.jquery.com/jquery-latest.min.js"></script>
+<script>
+	$(document).ready(function() {
+		$(":button").click(function() {
+			/* $("h2").css("color", "red");
+			$("h2").slideUp(2000);
+			$("h2").slideDown(2000, function() {
+				$("h2").css("color", "blue");
+			}); */
+			$("h2").css("color", "red").slideUp(2000).slideDown(2000, function() {
+				$("h2").css("color", "blue");
+			});
+		});
+		
+	});
+</script>
+
+<style>
+	#slide, #panel {
+		padding : 5px;
+		background-color : #e5eecc;
+		border: solid 1px #c3c3c3;
+	}
+	
+	#panel {
+	padding : 50px;
+	/* display : none; */
+	}
+</style>
+
+</head>
+<body>
+<!-- 
+	수행순서
+	버튼을 클릭하면 Hello World 글자색이 빨간색으로 바뀐후,
+	슬라이드효과로 올라갔다가 내려온후 글자색이 파란색으로 변경
+ -->
+	<h2>Hello World</h2>
+	<button>클릭</button><br/><br/>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

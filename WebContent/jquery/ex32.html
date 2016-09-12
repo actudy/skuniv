@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script  src="//code.jquery.com/jquery-latest.min.js"></script>
+<script>
+
+	$(document).ready(function() {
+		$("button").click(function() {
+			//$("#div").remove(); //div와 그 안에 포함된 모든 항목을 지운다.
+			//$("#div").empty(); //div는 두고 그안에 하위항목을 모두 제거!
+			//$("b.b1").empty();
+			//$("#div").remove(".del");
+			$("b").remove(".del, .new");
+		});
+	});
+</script>
+
+</head>
+<body>
+<button>지우기</button><br/><br/>
+나는?
+	<div id="div" style="height: 200px; width: 300px; border: 1px solid black; background-color: lightgray;">
+	<b class="del">나는 문장이야</b><br/>
+	나는 홍길동입니다. <br/>
+	<b class="del">나는 김철수입니다.</b><br/>
+	<b class="new">나는 홍순희입니다.</b><br/>
+	</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script  src="//code.jquery.com/jquery-latest.min.js"></script>
+<script>
+	$(document).ready(function() {
+		
+		$("#btn1").click(function() {
+			$("#text1").text("Hello world");//아무것도 안넣으면 뽑아내는것 안에 ""들어가면 내용을 바꾸겠다는 소리!	
+		});
+		$("#btn2").click(function() {
+			$("#text2").html("<b>Hello world</b>");
+		});
+		$("#btn3").click(function() {
+			$("#text3").val("Hello world");
+		});
+		$("#btn4").click(function() {
+			var text = $("p").text(function(i, oriText){ //i가 인덱스
+				return oriText + "!!!!" + "index :" +i; //배열처럼 되어 있어서 각각의 인덱스를 관리해준다.	
+			});
+		});
+		
+		//$("#site").attr("href", "http://www.daum.net");
+		/* $("#site").attr("href", function(i, oriValue) {
+			return oriValue + "/rgn/townWetr.nhn";
+		}); */
+		
+		$("#site").attr({
+			"href":"http://weather.naver.com/rgn/townWetr.nhn",
+			"title":"지역별날씨정보"
+		})
+	});
+</script>
+
+</head>
+<body>
+	<a href="http://weather.naver.com" title="네이버날씨" id="site">site 이동</a>
+	<p id="text1">첫번째 문장입니다.</p>
+	<p id="text2">두번째 문장입니다.</p>
+	<input type="text" value="default value" id="text3"/> <br/>
+	
+	<button id="btn1">Text변환</button>
+	<button id="btn2">HTML변환</button>
+	<button id="btn3">VALUE변환</button>
+	<button id="btn4">변환</button>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

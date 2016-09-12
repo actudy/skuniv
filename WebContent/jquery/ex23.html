@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script  src="//code.jquery.com/jquery-latest.min.js"></script>
+<script>
+	$(document).ready(function() {
+		$(":button").click(function() {
+			
+			$("div").animate({ height: '300px', opacity: '0.7'}, 'slow');
+			$("div").animate({ width: '300px', opacity: '0.2'}, 'fast');
+			$("div").animate({ height: '100px', opacity: '0.9'}, 1000);
+			$("div").animate({ width: '100px', opacity: '0.5'}, 1000);
+			
+			/* 
+			var div = $("div"); //이렇게도 가능!
+			div.animate();
+			div.animate();
+			div.animate();
+			div.animate();
+			*/
+		});
+	});
+</script>
+</head>
+<body>
+	<button>클릭</button><br/><br/>
+	<div style ="width: 100px; height: 100px; background-color: lightblue; position: absolute;"></div>
+	
+	
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

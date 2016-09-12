@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script  src="//code.jquery.com/jquery-latest.min.js"></script>
+<script>
+	$(document).ready(function() {
+		$(":button").click(function() {
+			//$("div").animate({left: '200px', height: '+=50px', width: '+=50px', opacity: '0.4'}); //애니메이션 넣기
+			//점점 증가 시킬 때 += 의 연산자 사용가능하다.
+			$("div").animate({ height: 'toggle', width: 'toggle'});
+		});
+	});
+</script>
+</head>
+<body>
+	<button>클릭</button><br/><br/>
+	<div style ="width: 100px; height: 100px; background-color: lightblue; position: absolute;"></div>
+	
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

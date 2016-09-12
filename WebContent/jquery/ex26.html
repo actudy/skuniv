@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script  src="//code.jquery.com/jquery-latest.min.js"></script>
+<script>
+	$(document).ready(function() {
+		$(":button").click(function() {
+			$("h2").hide(2000, function() { //이벤트가 다 끝나고서 수행해준다.
+				alert('문장이 사라졌죠?'); //핸들러 함수가 필요하다.				
+			});
+		});
+		
+	});
+</script>
+</head>
+<body>
+	<button>HIDE</button><br/><br/>
+	<h2>나는 문장입니다.</h2>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

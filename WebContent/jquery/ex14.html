@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script  src="//code.jquery.com/jquery-latest.min.js"></script>
+<script>
+
+	$(document).ready(function(){
+		//on은 동시에 여러가지 일 지정 가능!
+// 		$("h2").on('mousedown', function() {
+// 			$(this).hide();
+// 		}); //onclick이벤트가 발생!
+		$("h2").on('click', function() {
+			$(this).hide();
+		}); //onclick이벤트가 발생!
+	});
+</script>
+</head>
+<body>
+	<h1>오늘의 할일</h1>
+	<h2>jQuery</h2>
+	<h2>게시판/회원관리 수정</h2>
+	<h2>스터디</h2>
+</body>
+</html>

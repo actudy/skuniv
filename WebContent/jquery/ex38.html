@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script  src="//code.jquery.com/jquery-latest.min.js"></script>
+<script>
+	$(document).ready(function() {
+		//$("div p").first().css("background-color", "yellow"); //first()맨 처음껏만 나옴!
+		$("div p").last().css("background-color", "yellow"); //last()맨 마지막껏만 나옴!
+	});
+</script>
+<style>
+</style>
+</head>
+<body>
+	<h1>중화반점 메뉴</h1>
+	<p>식사류</p>
+	<div style="border: 1px solid black;">
+		<p>자장면</p>
+		<p>볶음밥</p>
+	</div>
+	<br />
+
+	<p>요리류</p>
+	<div style="border: 1px solid black;">
+		<p>깐쇼새우</p>
+		<p>양장피</p>
+	</div>
+	<br />
+</body>
+</html>

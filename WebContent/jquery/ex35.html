@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+<script src="/Lecture-Web/jquery/js/jquery-1.11.3.min.js"></script>
+<script>
+	$(document).ready(function() {
+		/* $("span").parent().css({
+			"color":"red",
+			"border":"2px solid red"
+		}); */
+		
+		/* $("span").parents().css({ //내 위에있는 조상 모두!
+			"color":"red",
+			"border":"2px solid red"
+		}); */
+		
+		/* $("span").parents("ul").css({ //내 위에있는 조상에서 ul이 있으면 색상 변경!
+			"color":"red",
+			"border":"2px solid red"
+		}); */
+		
+		/* $("span").parentsUntil("div").css({ //span 위에있는 조상에서 div안에 있는 부모 색상 변경!
+		"color":"red",
+		"border":"2px solid red"
+		}); */
+	});
+</script>
+<style>
+.ancestor * { /* 모든 하위에 적용 */
+	display: black;
+	border: 2px solid lightgray;
+	color: lightgray;
+	padding: 5px;
+	margin: 10px;
+}
+</style>
+</head>
+<body>
+	<div class="ancestor">
+		<div style="width: 500px;">div
+			<ul>ul
+				<li>li
+					<span>span</span>
+				</li>
+			</ul>
+		</div>
+		
+		<div style="width: 500px;">div
+			<p>p
+				<span>span</span>
+			</p>
+		</div>
+		
+	</div>
+</body>
+</html>

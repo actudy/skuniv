@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script  src="//code.jquery.com/jquery-latest.min.js"></script>
+<script>
+	$(document).ready(function() {
+		alert("HTML 추출 : " + $("#p").html() + "\n" //getById => $("#p") //innehtml 같은것!
+				+ "TEXT 추출 : " + $("#p").text()); //innetext 같은것!
+		//alert("TEXT 추출 : " + $("p").text());
+		$(":button").click(function() {
+			alert("이름 추출 : " + $("#name").val()); //value ==> val()
+		});		
+		
+		alert("추출된 네이버 주소 : " + $("#site").attr("href"));
+		
+	});
+</script>
+
+</head>
+<body>
+	<a href="http://www.naver.com" id="site">네이버</a>
+	<!-- div아니면 p로 문단을 추출가능! -->
+	<p id="p">내이름은 <b>홍길동</b>이고, 별명은 <i>의적</i>입니다.</p>
+	이름 입력<input type="text" id="name"/>
+	<button>입력완료</button>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

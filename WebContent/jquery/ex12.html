@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script  src="//code.jquery.com/jquery-latest.min.js"></script>
+<script>
+	//mousedown mouseup
+	$(document).ready(function(){
+		
+		//인자가 두개다 mouseenter,mouseleave
+		$("#mouse").hover(function() {
+			$(this).css("background-color", "yellow");
+		}, function() {
+			$(this).css("background-color", "gray");
+		});
+		
+		$("#mouse").mouseleave(function() {
+			alert('마우스가 떠났습니다.');
+		});
+		
+		$("#mouse").mouseenter(function() {
+			alert('마우스가 진입하였습니다.');
+		});
+		
+		$("#mouse").mouseup(function() {
+			alert('마우스에서 손을 떼지 마세요.');
+		});
+				
+		$("#mouse").mousedown(function() {
+			alert('마우스가 눌렸습니다.');
+		});
+	});
+</script>
+</head>
+<body>
+<!-- 	<h1 id="mouse">문장에 마우스를 클릭해보세요.</h1> -->
+	<h1>
+		<span id="mouse">문장에 마우스를 클릭해보세요.</span>
+	</h1>
+</body>
+</html>

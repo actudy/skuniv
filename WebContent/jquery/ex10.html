@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script  src="//code.jquery.com/jquery-latest.min.js"></script>
+<script>
+	$(document).ready(function(){
+		//$("tr:even").css("background-color", "green"); // 하나의 속성만 들어가면 :로 구분 //홀짝 색구분
+		$("tr:odd").css("background-color", "#CCC"); // 하나의 속성만 들어가면 :로 구분 //표시줄만 제외하고는 홀짝 색구분
+	});
+</script>
+</head>
+<body>
+
+	<h2>회원명부</h2>
+	<table border="1">
+	<tr>
+		<th>이름</th>
+		<th>전화번호</th>
+	</tr>
+	<tr>
+		<th>몰라요</th>
+		<th>010-2222-3333</th>
+	</tr>
+	<tr>
+		<th>몰라</th>
+		<th>010-1111-3333</th>
+	</tr>
+	<tr>
+		<th>집갈래</th>
+		<th>010-3333-3333</th>
+	</tr>
+	</table>
+</body>
+</html>

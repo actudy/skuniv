@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script  src="//code.jquery.com/jquery-latest.min.js"></script>
+<script>
+/*
+ * 이벤트 핸들러
+ 	- Mouse			  : click, dbclick, mouseenter, mouseleave
+ 	- Keyboard		  : keydown, keyup, keypress
+ 	- Form 			  : submit, focus, blur, change 
+ 	- Document/Window : load, resize, unload, scroll
+ */
+	
+	
+	$(document).ready(function(){
+		
+		$("body >*").click(function() {
+			$(this).hide();
+		});
+		
+// 		$("h1").click(function() {
+// 			$(this).hide();
+// 		});
+
+// 		$("button").click(function(){
+// 			$("h3").hide();			
+// 		});
+
+// 		$("h1").mouseenter(function() {
+// 			$(this).hide();
+// 		});
+		
+// 		$("h1").mouseleave(function() {
+// 			$(this).hide();
+// 		});
+	});
+</script>
+</head>
+<body>
+	<h1>첫번째 문장입니다.</h1>
+	<h1>두번째 문장입니다.</h1>
+	<h1>세번째 문장입니다.</h1>
+	<h1>네번째 문장입니다.</h1>
+	<button>눌러!</button>
+</body>
+</html>
