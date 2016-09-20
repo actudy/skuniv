@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script  src="//code.jquery.com/jquery-latest.min.js"></script>
+<script>
+	$(document).ready(function(){
+		/* $(선택자).함수(); 
+			선택자를 제어하기 위해서 태그를 알아야함. tagname, idname, classname
+			
+			$("태그요소").함수(); ==> h1
+		*/
+		//$("ul li:first").hide();
+		$("h1:first").hide(); //요소에 순서가 필요할 때는 : 하고 순서를 써준다!
+	});
+</script>
+</head>
+<body>
+	<h1>동물종류</h1>
+	<ul>
+		<li>사자</li>
+		<li>호랑이</li>
+		<li>기린</li>
+		<li>곰</li>
+	</ul>
+	
+	<h1>음식종류</h1>
+	<ul>
+		<li>자장면</li>
+		<li>탕수육</li>
+		<li>볶음밥</li>
+	</ul>
+</body>
+</html>

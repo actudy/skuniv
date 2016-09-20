@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script  src="//code.jquery.com/jquery-latest.min.js"></script>
+<script>
+	$(document).ready(function(){
+		/* $(선택자).함수(); 
+		선택자를 제어하기 위해서 태그를 알아야함. tagname, idname, classname
+		
+		$("태그요소").함수(); ==> h1
+		*/
+		//$(".c1").hide(); //클래스 이름은 선언시 .이름  이런식으로!
+		//$("*").hide(); //모두 지우기
+		$("h2.c1").hide(); //태그가 h2이면서 클래스명이 c1인 것!
+	});
+</script>
+</head>
+<body>
+	<h1 class='c1'>Hello jQuery</h1>
+	<h2 class='c1'>Hello javascript</h2>
+	<h2>HTML</h2>
+	<h1>CSS</h1>
+</body>
+</html>
