@@ -1,0 +1,252 @@
+<!-- html 태그 사용법 -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>hello HTML</title>
+</head>
+<body>
+<!-- 
+------------------------------------------------------------
+ 0. 기본 구성
+ <html>
+ <head>
+	<title>
+		hello~ html!
+	</title>
+ </head>
+ <body>
+	hello world
+ </body>
+ </html>
+ 
+ 1. 태그 (Tag)
+  - "<"와 "">"로 묶인 명령어
+  - 시작태그와 종료태그로 구성
+  - 형태 : 
+ 	 <태그명> ... </태그명>
+  - 종료태그는 태그명 앞에 "슬래쉬(/)"를 붙임
+
+ 2. 요소 (Element)
+  <title>html 연습</title>
+  - 시작태그에서 종료태그까지의 모든 명령어를 요소하고 말함
+  - <title> : 시작태그, </title> : 종료태그
+  - title : 요소 명
+  - "html 연습" : 요소 내용
+
+ 3. 속성(Attribute)
+  - 각각의 시작태그는 필요에 따라 속성을 가질 수 있음
+  - 속성을 갖지 않는 태그도 있지만, 경우에 따라 여러 개의 속성을 가질 수 있음
+  - 속성은 요소의 시작태그에만 적용됨
+  
+ 4. 값 (Value)
+  - 속성에 대한 값을 의미함
+   <a href = "http://www.naver.com">
+   속성	: href
+   값	: http://www.naver.com
+------------------------------------------------------------   
+-->
+	</br></br>1. 글자 태그
+	<h1>첫 번째로 큰 글자 태그</h1>
+	<h2>두 번째로 큰 글자 태그</h2>
+	<h3>세 번째로 큰 글자 태그</h3>
+	<h4>네 번째로 큰 글자 태그</h4>
+	<h5>다섯 번째로 큰 글자 태그</h5>
+	<h6>여섯 번째로 큰 글자 태그</h6>
+	
+	<p>본문 글자 태그</p>
+	<p>웹 퍼블리셔를 목표로 공부해보자!</p>
+	
+	<!-- 글자 형태에 해당되는 태그, 대부분 스타일 시트로 처리하기에 잘 사용되지 않음 -->
+	<!--
+	<h1><b>첫 번째로 큰 글자 태그(굵게)</b></h1>
+	<h1><i>첫 번째로 큰 글자 태그(기울기)</i></h1>
+	<h1><small>첫 번째로 큰 글자 태그(작게)</small></h1>
+	<h1><sub>첫 번째로 큰 글자 태그(아래에 붙게)</sub></h1>
+	<h1><sup>첫 번째로 큰 글자 태그(위에 붙게)</sup></h1>
+	<h1><ins>첫 번째로 큰 글자 태그(밑줄)</ins></h1>
+	<h1><del>첫 번째로 큰 글자 태그(가운데 줄)</del></h1>
+	-->
+	
+	<!-- 루비 문자 -->
+	<ruby>
+		<span>濟州島</span>
+		<rt>제주도</rt>
+	</ruby><br/><br/>
+	
+	2. 본문 태그<br/>
+	<br/>[줄 바꿈]<br/><br/>
+	개행을 해보겠습니다!
+	잘되고 있나?
+	한줄로 나오네..<br/>
+	<br/>br태그를 이용하여 개행을 해볼까?<br/>
+	개행이 되었나?<br/>
+	오 되네!<br/><br/>
+	
+	[줄 긋기]</br>
+	<hr/>
+	<hr width="100px;"/>
+	<hr width="80%" />
+	<hr width="30%" color="red" />
+	<hr width="70%" color="blue" size="5"/></br>
+	
+	3. 앵커 태그 + 이미지 태그<br/>
+	<a href = "http://www.naver.com">
+	<!-- img 속성 
+	src		: 이미지의 경로 지정
+	alt		: 이미지가 없을 때 나오는 글자 지정
+	width	: 이미지 너비 지정
+	height	: 이미지의 높이 지정
+	-->
+	<img src="http://img.naver.net/static/www/u/2013/0731/nmms_224940510.gif" width="300" height="120" 
+		border="3"  style="border-color: green" alt="네이버 로고">
+	</a><br/><br/>
+	
+	4. 목록 태그<br/>
+	<!--
+	<ul> 순서가 없는 목록 태그
+	<ol> 순서가 없는 목록 태그
+	<li> 목록 요소
+	
+	<dl> 정의 목록 태그
+	<dt> 정의 용어 태그
+	<dd> 정의 설명 태그
+	-->
+	<ul>
+		<li>html</li>
+		<li>css</li>
+		<li>java script</li>
+	</ul>
+	<ol>
+		<li>html</li>
+		<li>css</li>
+		<li>java script</li>
+	</ol><br/>
+	
+	<dl>
+		<!-- 용어 정의 -->
+		<dt>퓨처스 1기 프로젝트팀</dt>
+		<!-- 용어 설명 -->
+		<dd>codit<dd>
+		<dd>fugle<dd>
+		<dd>RSubway<dd>
+		<dd>조다고치<dd>
+		<dd>아라동 사남매<dd>
+	</dl>
+	
+	5. table 태그<br/>
+	<!-- 표를 만들 때 사용 -->
+	<table border = "2">
+		<!-- 
+		table 속성
+		border : 표의 테두리 두께 지정
+		
+		th, td 속성
+		rowspan : 셀의 높이 지정
+		colspan : 셀의 너비 지정
+		
+		테이블 요소
+		 <tr> 표 내부의 행 태그
+		 <th> 행 내부의 제목 셀 태그
+		 <td> 행 내부의 일반 셀 태그		
+		-->
+		<tr>
+		<th>HTML</th>
+		<th>CSS</th>
+		<tr>
+		<tr>
+			<th>데이터 1</th>
+			<th>데이터 1</th>
+		</tr>
+		<tr>
+			<th>데이터 2</th>
+			<th>데이터 2</th>
+		</tr>
+	</table><br /><br />
+	
+	6. form 태그<br />
+	<!-- 회원가입 등 입력양식 작성 시 사용 -->
+	<!-- form 속성 
+		action : 입력 데이터의 전달 위치를 지정
+		method : 입력 데이터의 전달 방식을 선택
+	-->
+	<!-- *데이터 전송과 관련된 내용이므로 지식 필요 (나중에 다시~) -->
+	<form>
+		<!-- input 속성 
+			button : 버튼 생성
+			checkbox : 체크박스 생성
+			file : 파일 입력 양식
+			hidden : 숨기기
+			image : 이미지 생성
+			password : 비밀번호 입력 양식
+			radio : 라디오 버튼 생성
+			reset : 초기화 버튼 생성
+			submit : 제출 버튼 생성
+			text : 글자 입력 양식
+		-->
+		<input type="button" name="btn_search" value="버튼"/><br />
+		<input type="checkbox" />체크박스<br />
+		<input type="file" /><br />
+		<input type="hidden" /><br />
+		<input type="image" src="http://img.naver.net/static/www/u/2013/0731/nmms_224940510.gif"/>네이버 로고 버튼<br />
+		<input type="password" /> 입력내용 보이지 않음<br />
+		<input type="radio" />라디오 버튼<br />
+		<input type="reset" />초기화 버튼<br />
+		<input type="submit" />제출 버튼<br />
+		<input type="text" name="form_search"/>텍스트 입력<br /><br />
+		
+		<!-- label 태그는 input 태그를 설명하는데 사용 -->
+		<label for="name">이름</label>
+		<input type="text" id="name" /><br /><br />
+		
+		<!-- HTML5에서 추가된 속성 (외우지마)-->
+		<input type="color" /> 색상 선택<br />
+		<input type="date" /> 일 선택<br />
+		<input type="datetime" /> 날짜 선택<br />
+		<input type="email" /> 이메일 입력<br />
+		<input type="month" /> 월 선택<br />
+		<input type="number" /> 숫자 생성<br />
+		<input type="range" /> 범위 선택<br />
+		<input type="search" /> 검색어 입력<br />
+		<input type="tel" /> 전화번호 입력<br />
+		<input type="time" /> 시간 선택<br />
+		<input type="url" /> url주소 입력<br />
+		<input type="week" /> 주 선택<br />
+	</form>
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
